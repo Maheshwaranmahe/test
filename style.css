@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rajdhani&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #470005;
+    --text-color:#1d1c24;
+    --bg-color:#f4f1c3;
+    --white:#fff;
+    --black:#000;
+    --text-color2:#a6a6a6;
+    --btn-color:#d1b75e;
+}
+#offcanvasNavbar{
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+}
+#offcanvasNavbar li a{
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home{
+    background: url(images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .carousel-item{
+    padding: 5%;
+    padding-left: 10%;
+}
+.home h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: 65px;
+}
+.home p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+.read-btn{
+    width: 20%;
+    float: left;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+}
+.Quote-btn{
+    width: 20%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 10px 0px;
+    border-radius: 40px;    
+}
+.Quote-btn:hover{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.video{
+    margin-top: -10%;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-top: 10%;
+}
+.blog{
+    margin-bottom: 5%;
+}
+.blog .card1{
+    background-color: var(--bg-color);
+    width: 30%;
+    height: 20%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.blog .card1-active{
+    background-color: var(--main-color);
+    margin-top: 5%;
+    width: 30%;
+    margin-left: 3%;    
+}
+.card1-active .about-heading{
+    color: var(--white);
+}
+.card1-active p{
+    color: var(--white);
+}
+.blog .card1-img1{
+    margin-top: -10%;
+    padding-bottom: 10%;
+}
+.blog .card1-img2{
+    margin-top: -10%;
+    padding-bottom: 10%;
+    visibility: hidden;
+}
+.card1-bg:hover .about-heading{
+    color: var(--white);
+}
+.card1-bg:hover p{
+    color: var(--white);
+}
+.card1:hover .card1-bg{
+    background-color: var(--main-color);
+}
+
+.about{
+    margin-bottom: 5%;
+}
+.about p{
+    font-size: 20px;
+}
+.about .image{
+    width: 100%;
+}
+
+.services-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-top: 10%;
+    padding-left: 10%;
+}
+.services-img{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.services .img1{
+    margin-left: 15px;
+}
+.services .img1 i{
+    visibility: hidden;
+}
+.services-img:hover i{
+    visibility: visible;
+}
+.services-img1:hover{
+    background-color: var(--main-color);
+    position: relative;
+    opacity: 1;
+}
+.business{
+    background: url(images/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+.business-text{
+    text-align: center;
+}
+.business-text h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.business-text p{
+    font-size: 20px;
+    padding: 15%;
+}
+.quote-btn1{
+    width: 20%;
+    float: left;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--main-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 40px;
+    margin-left: 40%;
+}
+
+.consulting .heading{
+    margin-bottom: 7%;
+}
+.consulting p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    padding-top: 20%;
+}
+
+
+.client {
+    width: 100%;
+    padding-bottom: 120px;
+}
+.client2{
+    width: 100%;
+    padding-top: 70px;
+}
+
+.ipsum {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: var(--black);
+    margin-left: 0px;
+    padding: 20px;
+    border: 1px solid var(--black);
+    text-align: justify;
+}
+.image2{
+    width: 30%;
+    float: left;
+}
+.client-text {
+    width: 70%;
+    float: left;
+    font-size: 22px;
+    padding-top: 7px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--btn-color);
+}
+.carousel-indicators {
+    width: 40%;
+    background-color: red;
+    color: black;
+}
+
+
+.contact {
+    width: 100%;
+    float: left;
+    padding-bottom: 5%;
+}
+.contact-text{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: var(--black);
+    text-align: center;
+    margin-left: 0px;
+}
+.contact .container {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+}
+.email-bt {
+    color: var(--text-color2);
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    background: #ffffff;
+    border-radius: 40px;
+    border: 1px solid #8f8f8f;
+    font-family: Raleway;
+}
+input.email-bt::placeholder {
+    color: var(--text-color2);
+}
+.massage-bt {
+    color: var(--text-color2);
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    padding: 36px 20px 10px 20px;
+    background: var(--white);
+    border-radius: 40px;
+    border: 1px solid var(--text-color2);
+    font-family: Raleway;
+}
+textarea#comment::placeholder {
+    color: var(--text-color2);
+}
+.form-group {
+    margin-bottom: 30px;
+}
+.send_bt {
+    width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--btn-color);
+    padding: 10px 0px;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+.send_bt a:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+
+footer{
+    width: 100%;
+    float: left;
+    background-color: var(--main-color);
+    height: auto;
+    padding: 5%;
+}
+footer h1{
+    width: 100%;
+    float: left;
+    font-size: 26px;
+    color: var(--white);
+}
+footer p{
+    float: left;
+    font-size: 20px;
+    color: var(--white);
+    margin-left: 0px;
+}
+footer li a{ 
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+}
+footer li a:hover{ 
+    color: var(--btn-color);
+}
+.newsletter{
+    width: 100%;
+    float: left;
+}
+.newsletter-left{
+    width: 50%;
+    float: left;
+}
+.newsletter-right {
+    width: 32%;
+    float: right;
+}
+
+.social-icon{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: var(--white);
+}
+.social-icon li{ 
+    font-size: 16px;
+    color: var(--white);
+    float: left;
+    padding-left: 20px;
+}
+.mail_bt {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: var(--white);
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.subscribe-bt {
+    width: 170px;
+    float: left;
+    text-align: center;
+}
+.subscribe-bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--btn-color);
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (min-width:150px) and (max-width:900px){
+    .blog .row{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    .blog .card1{
+        width: auto;
+        height: auto;
+    }
+    .blog .card1-active{
+        height: auto;
+        width: auto;
+    }
+}
