@@ -224,14 +224,24 @@
     font-size: 22px;
     padding-top: 7px;
 }
-
-.carousel-indicators .active {
+.carousel-indicators{
+    position: relative;
+    top: 500px;
+}
+ol{
+    display: flex;
+}
+#client-carousel li{
+    background-color: var(--main-color);
+    opacity: 1;
+    width: 50px;
+    height: 10px;
+}
+#client-carousel li:hover{
     background-color: var(--btn-color);
 }
-.carousel-indicators {
-    width: 40%;
-    background-color: red;
-    color: black;
+#client-carousel .active1{
+    background-color: var(--btn-color);
 }
 
 
