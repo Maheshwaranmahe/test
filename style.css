@@ -119,6 +119,8 @@
 }
 .card1:hover .card1-bg{
     background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
 }
 
 .about{
@@ -240,7 +242,7 @@ ol{
 #client-carousel li:hover{
     background-color: var(--btn-color);
 }
-#client-carousel .active1{
+#client-carousel .carousel-indicators .active{
     background-color: var(--btn-color);
 }
 
